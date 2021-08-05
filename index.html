@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matar o Pato!</title>
+  <script type="text/javascript">
+  function IniciarJogo(){
+    var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+  window.location.href = 'jogo.html?'+nivel_jogo;
+}
+  </script>
+</head>
+
+<body>
+  <div class="botao_nivel">
+    <p>
+      <b>Nível: </b>
+      <select name="" id="nivel_jogo">
+        <option value="1">Fácil</option>
+        <option value="2">Normal</option>
+        <option value="3">Impossível</option>
+      </select>
+    </p>
+    <br>
+    <img class="botao" src="img/iniciar.png" onclick="IniciarJogo()" alt="">
+  </div>
+
+
+
+
+</body>
+</html>
