@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index-style.css" />
   <title>Matar o Pato!</title>
   <script type="text/javascript">
   function IniciarJogo(){
@@ -15,7 +16,13 @@
 </head>
 
 <body>
-  <div class="botao_nivel">
+  <audio autoplay>
+    <source src="img/WhatsApp Audio 2021-08-23 at 20.54.24.mpeg" type="audio/mp3">
+   </audio>
+  <div  class="menu">
+     <img src="img/salvar.png" onclick="IniciarJogo()" style="width: 70%;" alt="">
+    
+    <br>
     <p>
       <b>Nível: </b>
       <select name="" id="nivel_jogo">
@@ -24,8 +31,6 @@
         <option value="3">Impossível</option>
       </select>
     </p>
-    <br>
-    <img class="botao" src="img/iniciar.png" onclick="IniciarJogo()" alt="">
   </div>
 
 

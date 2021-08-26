@@ -1,0 +1,33 @@
+
+body{
+  background: url('/img/d8oalkw-cbd821cd-6461-4f53-9eb6-9b3e296f0ba2.png' );
+  cursor:crosshair;
+}
+
+
+.menu{
+  width: 40%;
+  height: 40%;
+  margin: 200px auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 95px;
+  background-color: rgba(255, 255, 255, 0.459);
+}
+
+select{
+  width: 150px;
+  font-size: 1.5rem;
+}
+
+p{
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 700px){
+  .menu{
+    width: 70%;
+    height: 70%;
+  }
+  
+}

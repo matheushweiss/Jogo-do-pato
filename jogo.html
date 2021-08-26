@@ -4,60 +4,38 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/jogo-style.css" />
   <title>Matar o Pato!</title>
 
 <script src="jogo.js"></script>
 
 </head>
 <body onload="IniciarJogo()">
+  <audio autoplay>
+    <source src="img/WhatsApp Audio 2021-08-23 at 20.54.24.mpeg" type="audio/mp3"> </audio>
 
-<div style="float:left; width:auto; height:698px; border:solid 1px">
+    <div class="contadores">
+                  
+      <div class="patos">
+        <img src="img/pato.png" />
+        <span id="patos_vivos"></span>
+      </div>
 
-<table border="1">
-  <tr>
-    <td>
-      <img src="img/pato.png" alt="">
-    </td>
-  
-    <td>
-  <span id="patos_vivos" style="font-size: 40px;"></span>
-  </td>
-      </tr>
+      <div class="patos">
+        <img src="img/pato_morto.png" />
+        <span id="patos_mortos"></span>
+      </div>
 
-    </table>
-<br>
+      <div class="patos">
+        <span id="cronometro"></span>
+      </div>
 
-<table border="1">
-  <tr>
-    <td>
-      <img src="img/pato_morto.png" alt="">
-    </td>
-  
-    <td>
-  <span id="patos_mortos" style="font-size: 40px;"></span>
-  </td>
-      </tr>
+      <div>
+        <a href="index.html"><img src="img/restart.png"/></a>
+      </div>
 
-    </table>
-
-
-
-<table border="1" style="width: 145px; height: 135px;">
-
-<tr>
-
-     <td style="background: url(img/cronometro.png); text-align: center;">
-      <span id="cronometro" style="color: red; font-weight: bold; font-size: 30px"></span>
-
-    </td>
-</tr>
-</table>
 </div>
 
-<div id="cenario" style="float: left; width: 900px; height: 700px; background: url('img/cenario2.png'); background-position: bottom"></div>
-
-
-
-  
+    <div id="cenario"></div>
 </body>
 </html>
